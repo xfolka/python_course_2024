@@ -6,8 +6,8 @@ https://conda-forge.org/downloadwget
 
 
 # install miniconda
-´´´chmod u+x miniforge3-Linux-x86._64.sh
-./miniforge3-Linux-x86._64.sh´´´
+`chmod u+x miniforge3-Linux-x86._64.sh
+./miniforge3-Linux-x86._64.sh´
 ## do not activate conda during installation
 
 # source the conda file
