@@ -44,13 +44,23 @@ Use a name that allows you to remember what it is used for.
 when conda is active type
 ```conda activate name_of_env```
 
-## Installing python modules with Pip
+## Installing python modules in your environment with Pip
 To install python modules we can use a program called ```pip``` like this:
 ```pip install module``` or ```pip install module==x.y.z``` to install a specific version. I.e.
 ```
 pip install numpy==2.0.0
 ```
 If version is not specified, the latest version available will be installed
+
+## Sharing and reusing environments
+Conda allows you to export your environment to share it with others as well as allowing yout to install environments that are shared with you.
+To export one of your environments, activate the environment and type:
+```conda env export | > environment.yml```
+This will store the needed data in the file ```environment.yml```
+
+In order to create an environment from a file you type, in a terminal:
+```conda env create -f environment.yml``` 
+This will create an environment as specified in the file ```environment.yml```.
 
 
 ## More information / Documentation
