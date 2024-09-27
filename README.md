@@ -21,7 +21,7 @@ chmod u+x miniforge3-Linux-x86._64.sh
 **_Do NOT activate conda during installation_**
 
 ## Source the conda file
-```source miniforge3/etc/profile.d/conda.sh ```
+```source ~/miniforge3/etc/profile.d/conda.sh ```
 
 ### Create alias to source the file (optional but recommended)
 open text editor and type
