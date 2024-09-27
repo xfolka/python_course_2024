@@ -44,6 +44,9 @@ Use a name that allows you to remember what it is used for.
 when conda is active type
 ```conda activate name_of_env```
 
+Now your environment is active and the packages installed (and only those) are available to you.
+
+
 ## Installing python modules in your environment with Pip
 To install python modules we can use a program called ```pip``` like this:
 ```pip install module``` or ```pip install module==x.y.z``` to install a specific version. I.e.
