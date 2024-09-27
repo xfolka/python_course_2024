@@ -65,6 +65,9 @@ In order to create an environment from a file you type, in a terminal:
 ```conda env create -f environment.yml``` 
 This will create an environment as specified in the file ```environment.yml```.
 
+Optional: download this environment file to your computer and try to recreate the environment:
+https://github.com/xfolka/python_course_2024/blob/main/environment.yml
+
 
 ## More information / Documentation
 Documentation for conda/Miniforge can be found here:
