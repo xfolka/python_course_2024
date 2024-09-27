@@ -46,6 +46,13 @@ when conda is active type
 ```conda activate name_of_env```
 
 ## Installing python modules with Pip
+To install python modules we can use a program called ```pip``` like this:
+```pip install module``` or ```pip install module==x.y.z``` to install a specific version. I.e.
+```
+pip install numpy==2.0.0
+```
+If version is not specified, the latest version available will be installed
+
 
 ## More information / Documentation
 Documentation for conda/Miniforge can be found here:
