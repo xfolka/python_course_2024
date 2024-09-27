@@ -47,5 +47,9 @@ when conda is active type
 
 ## Installing python modules with Pip
 
+## More information / Documentation
+Documentation for conda/Miniforge can be found here:
+https://conda-forge.org/docs/user/
+
 
 
