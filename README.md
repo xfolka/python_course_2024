@@ -1,8 +1,10 @@
 # python_course_2024
 
 ## download miniconda
+Browse to 
 https://conda-forge.org/downloadwget 
-´wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh´
+or, in a terminal, execute
+```wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh```
 
 
 ## install miniconda
