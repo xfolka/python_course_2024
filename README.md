@@ -21,9 +21,10 @@ chmod u+x miniforge3-Linux-x86._64.sh
 ```source miniforge3/etc/profile.d/conda.sh ```
 
 ### Create alias to source the file (optional but recommended)
-open text editor and type 
+open text editor and type
 ```alias condaon='source ~/miniforge3/etc/profile.d/conda.sh'```
 in an empty file.
+
 save file as .bashrc in home folder.
 
 In terminal execute
