@@ -39,7 +39,7 @@ When conda is active, type
 ```conda create -n name_of_env python==3.12```
 Where ```python==3.12``` means we want a specific version (3.12) of python in this environment
 and ```name_of_env``` is the name you want to give your environment.
-Use something that allows you to remember what it is used for.
+Use a name that allows you to remember what it is used for.
 
 ## Activate an environment
 when conda is active type
