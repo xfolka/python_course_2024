@@ -2,7 +2,7 @@
 ## Download miniconda
 Browse to
 
-https://conda-forge.org/downloadwget 
+https://conda-forge.org/download
 or, in a terminal, execute
 
 ```wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh```
