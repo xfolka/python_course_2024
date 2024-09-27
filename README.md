@@ -1,6 +1,5 @@
-# python_course_2024
 
-## download miniconda
+## Download miniconda
 Browse to
 
 https://conda-forge.org/downloadwget 
