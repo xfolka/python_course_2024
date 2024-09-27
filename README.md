@@ -9,10 +9,13 @@ or, in a terminal, execute
 
 
 ## Install miniconda
+Locate the file on your computer and execute the following in a terminal.
+
 ```
 chmod u+x miniforge3-Linux-x86._64.sh
 ./miniforge3-Linux-x86._64.sh
 ```
+OBS! On band the file should be directly in your home directory. It is not there move it there using for example a filemanager or the mv command.
 
 **_Do NOT activate conda during installation_**
 
