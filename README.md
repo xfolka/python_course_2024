@@ -6,6 +6,7 @@ https://conda-forge.org/download
 or, in a terminal, execute
 
 ```wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh```
+
 OBS! On BAND make sure you download it directly to your home directory. ```wget``` will download to your active directory and your browser might choose location for you!
 
 
