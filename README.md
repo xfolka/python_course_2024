@@ -6,16 +6,16 @@ https://conda-forge.org/download
 or, in a terminal, execute
 
 ```wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh```
+OBS! On BAND make sure you download it directly to your home directory. ```wget``` will download to your active directory and your browser might choose location for you!
 
 
 ## Install miniconda
-Locate the file on your computer and execute the following in a terminal.
+Execute the following in a terminal.
 
 ```
 chmod u+x miniforge3-Linux-x86._64.sh
 ./miniforge3-Linux-x86._64.sh
 ```
-OBS! On band the file should be directly in your home directory. It is not there move it there using for example a filemanager or the mv command.
 
 **_Do NOT activate conda during installation_**
 
