@@ -1,4 +1,4 @@
-name: course_env_24
+name: fake_course_env_24
 channels:
   - conda-forge
   - defaults
@@ -37,3 +37,6 @@ dependencies:
       - partd==1.4.2
       - pyyaml==6.0.2
       - toolz==0.12.1
+      - jupyterlab
+      - ipykernel
+      - ipython

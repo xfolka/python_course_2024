@@ -1,13 +1,26 @@
+# Python environments/Kernels
+
+## What is a kernel/Environment
+A kernel (or environment) is a specific setup of python version, modules and other installed software that can be reused, repeated and distributed.
+
+It allows you, in a convenient way, to have multiple versions of python and modules installed.
+
+Environements kan be "activted" when they should be used and "deactivated" when not needed anymore.
+
+A kernel can be stored as a file and distributed to other people who want to try your experiments or run your code.
+
 
 ## Download miniconda
 Browse to
 
 https://conda-forge.org/download
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 or, in a terminal, execute
 
 ```wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh```
 
-OBS! On BAND make sure you download it directly to your home directory. ```wget``` will download to your active directory and your browser might choose location for you!
+**OBS!** On BAND make sure you download it directly to your home directory. ```wget``` will download to your current working directory but your browser might choose location for you!
 
 
 ## Install miniconda
@@ -20,33 +33,53 @@ chmod u+x miniforge3-Linux-x86._64.sh
 
 **_Do NOT activate conda during installation_**
 
-## Source the conda file
-```source ~/miniforge3/etc/profile.d/conda.sh ```
+NOTE: on your own computer it is absolutely possible that you want to activate conda during installation. However, on BAND, we can't do that.
+
+## Source the conda file (Activate conda)
+
+In your terminal type
+```
+source ~/miniforge3/etc/profile.d/conda.sh 
+```
 
 ### Create alias to source the file (optional but recommended)
-open text editor and type
-```alias condaon='source ~/miniforge3/etc/profile.d/conda.sh'```
-in an empty file.
 
-save file as .bashrc in home folder.
+In a terminal type
+```
+alias condaon='source ~/miniforge3/etc/profile.d/conda.sh'
+```
+
+### Make the alias permanent
+Open text editor and type
+```
+alias condaon='source ~/miniforge3/etc/profile.d/conda.sh'
+```
+
+in an empty file. save file as ```.bashrc``` in home folder.
 
 In terminal execute
-```chmod u+x .bashrc```
+```
+chmod u+x .bashrc
+```
 Open a new terminal and type
 ```condaon```
 this will activate conda an give access to the conda command
 
-## Create a conda environment (or core)
+## Create a conda environment
 
 When conda is active, type 
-```conda create -n name_of_env python==3.12```
+```
+conda create -n name_of_env python==3.12
+```
 Where ```python==3.12``` means we want a specific version (3.12) of python in this environment
 and ```name_of_env``` is the name you want to give your environment.
 Use a name that allows you to remember what it is used for.
 
 ## Activate an environment
 when conda is active type
-```conda activate name_of_env```
+```
+conda activate name_of_env
+```
 
 Now your environment is active and the packages installed (and only those) are available to you.
 
@@ -57,20 +90,59 @@ To install python modules we can use a program called ```pip``` like this:
 ```
 pip install numpy==2.0.0
 ```
-If version is not specified, the latest version available will be installed
+If version is not specified, the latest version available will be installed.
+
+### Install jupyter tools
+In a terminal, with a conda environment active, typ
+```
+pip install jupyterlab ipykernel ipython
+```
+to install jupyter tools
+
+Start jupyter lab either by typing
+```
+jupyter lab
+```
+or from menu. Notice that your environment is NOT available as kernel :(
+
+Exit jupyter lab.
+
+## Making a conda environment available as kernel for jupyter
+
+With your desired conda environment active, execute the following in a terminal:
+```
+python -m ipykernel install --user --name=cool_kernel
+```
+**or**
+```
+ipython kernel install --user --name=cool_kernel
+```
+
+Start jupyter lab again and check if something has changed!
+
 
 ## Sharing and reusing environments
 Conda allows you to export your environment to share it with others as well as allowing yout to install environments that are shared with you.
 To export one of your environments, activate the environment and type:
-```conda env export | > environment.yml```
+```
+conda env export > environment.yml
+```
 This will store the needed data in the file ```environment.yml```
 
 In order to create an environment from a file you type, in a terminal:
-```conda env create -f environment.yml``` 
+```
+conda env create -f environment.yml
+``` 
 This will create an environment as specified in the file ```environment.yml```.
 
-Optional: download this environment file to your computer and try to recreate the environment:
+Download this environment file to your computer and try to recreate the environment:
 https://github.com/xfolka/python_course_2024/blob/main/environment.yml
+
+## Useful conda commands
+* List environments
+* Show installed packages in environment
+* Deactivate environment
+
 
 
 ## More information / Documentation
