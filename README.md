@@ -69,9 +69,9 @@ this will activate conda an give access to the conda command
 
 When conda is active, type 
 ```
-conda create -n name_of_env python==3.12
+conda create -n name_of_env python==3.10
 ```
-Where ```python==3.12``` means we want a specific version (3.12) of python in this environment
+Where ```python==3.12``` means we want a specific version (3.10) of python in this environment
 and ```name_of_env``` is the name you want to give your environment.
 Use a name that allows you to remember what it is used for.
 
@@ -138,10 +138,18 @@ This will create an environment as specified in the file ```environment.yml```.
 Download this environment file to your computer and try to recreate the environment:
 https://github.com/xfolka/python_course_2024/blob/main/environment.yml
 
+* What is the name of the environment?
+* What version of python does it contain?
+* Find a few other packages that are installed in the environment
+
+Use some of the commands in the list below to answer the questions.
+
 ## Useful conda commands
-* List environments
-* Show installed packages in environment
-* Deactivate environment
+* List environments: ```conda env list```
+
+* Show installed packages in environment: ```conda list``` Combine it with ```|``` and ```grep``` to find a specific package: ```conda list | grep dask``` will list information about the package ```dask``` (f it is installed.
+
+* Deactivate environment (go back to base environment): ```conda deactivate``` 
 
 
 
@@ -150,4 +158,6 @@ Documentation for conda/Miniforge can be found here:
 https://conda-forge.org/docs/user/
 
 
+## Return to main course page
+https://github.com/CCI-GU-Sweden/eRImote-python-BIAS-Gtb
 
