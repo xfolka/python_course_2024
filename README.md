@@ -93,7 +93,7 @@ pip install numpy==2.0.0
 If version is not specified, the latest version available will be installed.
 
 ### Install jupyter tools
-In a terminal, with a conda environment active, typ
+In a terminal, with your conda environment active, typ
 ```
 pip install jupyterlab ipykernel ipython
 ```
